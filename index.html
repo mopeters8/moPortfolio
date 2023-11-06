@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script
+      src="https://kit.fontawesome.com/440e9bc411.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/about.css" />
+
+    <title>Owen Peters' Portfolio</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav
+      id="navbar-example2"
+      class="navbar-expand-md navbar-light bg-dark d-flex justify-content-center px-3 py-2"
+    >
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#introArea">Introduction</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#biographyArea">Biography </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#projectsArea">Projects</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- BODY OF PAGE -->
+    <div
+      class="aboutPage"
+      data-bs-spy="scroll"
+      data-bs-target="#navbar-example2"
+      data-bs-offset="0"
+      class="scrollspy-example"
+      tabindex="0"
+    >
+      <!-- INTRODUCTION -->
+      <div class="intro fadeInUp-animation" id="introArea">
+        <div class="col-12">
+          <p class="bioIntro fadeIn-animation">Hi, my name is</p>
+          <p class="bioName">Owen Peters</p>
+          <p class="bioSubtext fadeIn-animation">I try to code web things.</p>
+          <p class="bioDesc fadeIn-animation">
+            I'm a <b>software engineer</b> / <b>web developer</b> with a strong
+            interest in web design. I am currently working on growing this
+            portfolio, and looking for my entry into the industry!
+          </p>
+        </div>
+
+        <div class="socials fadeIn-animation">
+          <div class="leftSocials">
+            <a href="#biographyArea"
+              ><button type="button" class="btn btn-outline-light">
+                More about me!
+              </button></a
+            >
+          </div>
+          <div class="rightSocials">
+            <div class="icon">
+              <i class="fa-brands fa-instagram fa-2xl"></i>
+            </div>
+            <div class="icon">
+              <i class="fa-brands fa-linkedin-in fa-2xl"></i>
+            </div>
+            <div class="icon">
+              <i class="fa-brands fa-github fa-2xl"></i>
+            </div>
+          </div>
+        </div>
+
+        <a href="#biographyArea" class="chevronT">
+          <i class="fa-solid fa-chevron-down fa-2xl"></i>
+        </a>
+      </div>
+
+      <!-- BIOGRAPHY -->
+      <div class="container who">
+        <div class="row mb-4">
+          <div class="col">
+            <div class="biography fadeIn-animation rounded" id="biographyArea">
+              <h2 class="underline">Who am I<span>?</span></h2>
+              <p>
+                I am an aspiring software engineer and web developer with a deep
+                enthusiasm for problem-solving, collaboration, and continuous
+                learning.
+                <br />
+                <br />Recently, I successfully graduated from the University of
+                San Francisco, earning a Bachelor of Science degree in Computer
+                Science. Growing up surrounded by electronics, personal
+                computers, and gaming consoles, I fostered an enduring passion
+                for all things related to computing.
+                <br />
+                <br />My vision for the future includes a steadfast commitment
+                to expanding my knowledge in software engineering, web
+                development, and the gaming industry. I would love a career that
+                would welcome my eagerness, passion and tenacity to learn.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row gx-3 gy-4">
+          <div class="col-sm">
+            <div
+              class="pt-3 d-flex flex-column align-items-center rounded skills"
+            >
+              <div class="row">
+                <h2 class="underline">Skills</h2>
+              </div>
+              <div
+                class="row pt-3 d-flex flex-row text-center justify-content-center"
+              >
+                <div class="col-sm item">
+                  <i class="fa-solid fa-code fa-2xl"></i>
+                  <p>Development Experience</p>
+                </div>
+                <div class="col-sm item">
+                  <i class="fa-solid fa-person-chalkboard fa-2xl"></i>
+                  <p>Student Instruction</p>
+                </div>
+                <div class="col-sm item">
+                  <i class="fa-solid fa-people-carry-box fa-2xl"></i>
+                  <p>Teamwork & Collaboration</p>
+                </div>
+              </div>
+              <!-- <div class="row text-center text-secondary">
+                <p>Click for more info!</p>
+              </div> -->
+            </div>
+          </div>
+          <div class="col-sm">
+            <div
+              class="pt-3 d-flex flex-column align-items-center rounded achievements"
+            >
+              <div class="row">
+                <h2 class="underline">Achievements</h2>
+              </div>
+              <div
+                class="row pt-3 d-flex flex-row text-center justify-content-center"
+              >
+                <div class="col-sm item">
+                  <i class="fa-solid fa-graduation-cap fa-2xl"></i>
+                  <p>Computer Science Degree</p>
+                </div>
+                <div class="col-sm item">
+                  <i class="fa-solid fa-school fa-2xl"></i>
+                  <p>Dean's List</p>
+                </div>
+                <div class="col-sm item">
+                  <i class="fa-solid fa-hand-holding-dollar fa-2xl"></i>
+                  <p>St.Baldricks Charity Stream</p>
+                </div>
+              </div>
+              <!-- <div class="row text-center text-secondary">
+                <p>Click for more info!</p>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-12">
+            <div
+              class="pt-4 pb-5 d-flex flex-column align-items-center rounded techstack"
+            >
+              <div class="row">
+                <h2 class="underline">Tech Stack</h2>
+              </div>
+              <div
+                class="row pt-3 gx-5 gy-5 d-flex flex-row text-center justify-content-center"
+              >
+                <div class="col-sm item">
+                  <i class="fa-brands fa-java fa-2xl"></i>
+                </div>
+                <div class="col-sm item">
+                  <i class="fa-brands fa-js fa-2xl"></i>
+                </div>
+                <div class="col-sm item">
+                  <i class="fa-brands fa-html5 fa-2xl"></i>
+                </div>
+                <div class="col-sm item">
+                  <i class="fa-brands fa-css3-alt fa-2xl"></i>
+                </div>
+                <div class="col-sm item">
+                  <i class="fa-solid fa-c fa-2xl"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="arrows fadeIn-animation">
+        <span class="material-symbols-outlined"> arrow_downward </span>
+        <span class="material-symbols-outlined"> arrow_downward </span>
+        <span class="material-symbols-outlined"> arrow_downward </span>
+      </div> -->
+
+      <!-- BOOTSTRAP CARD WORKS -->
+
+      <div class="container-fluid py-3 projects" id="projectsArea">
+        <div class="mb-4 d-flex flex-column align-items-center">
+          <div class="row justify-content-center">
+            <h2 class="underline">Projects</h2>
+          </div>
+        </div>
+
+        <div class="row gy-4 text-center justify-content-center">
+          <!-- Senior Master Class -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card h-100 mx-1"
+              style="background-color: black; color: white"
+            >
+              <img
+                src="https://drive.google.com/uc?export=view&id=1zNomPTUIzWK5bSJl4DjsY3dKvgXguphg"
+                class="card-img-top img-fit"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Senior Master Class</h5>
+                <p class="card-text">
+                  Centralized Senior & Masters class organization web
+                  application. Connecting students, professors, and public
+                  sponsors on hosted classes for a semester of project building.
+                </p>
+              </div>
+              <div class="card-footer my-2">
+                <a href="#" class="btn btn-primary"
+                  >GitHub <i class="icon fa-brands fa-github fa-2xl"></i
+                ></a>
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#masterClassModalLong"
+                >
+                  Read more
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="masterClassModalLong"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="masterClassModalLongTitle"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">
+                          Senior Master Class
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        My team and I built a web application that allows
+                        professors to connect students with industry project
+                        sponsors and their ideas. We centralized a location for
+                        sponsor pitch ideas, and project team forming. This
+                        includes account creation, project uploading, student
+                        organization and communication
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MopBox -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card h-100 mx-1"
+              style="background-color: black; color: white"
+            >
+              <img
+                src="https://drive.google.com/uc?export=view&id=1T9KLnGzxU4_pAvtVQarWUFq9X-meVF6Q"
+                class="card-img-top img-fit"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">MopBox</h5>
+                <p class="card-text">
+                  Website that advertises MopBox, a PC building side hustle,
+                  with customer reviews and inquerys.
+                </p>
+              </div>
+              <div class="card-footer my-2">
+                <a href="#" class="btn btn-primary"
+                  >GitHub <i class="icon fa-brands fa-github fa-2xl"></i
+                ></a>
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#mopboxModalLong"
+                >
+                  Read more
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="mopboxModalLong"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="mopboxModalLongTitle"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">
+                          MopBox - PC Building Site
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        Website I created to host my side hustle, MopBox, a
+                        computer building business. As one of my favorite
+                        hobbies, building PC's has always interested me. To
+                        expand my business and to get more customers, I created
+                        a website that allows users to view customer reviews as
+                        well place orders directly to my email.
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Forum -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card h-100 mx-1"
+              style="background-color: black; color: white"
+            >
+              <img
+                src="https://drive.google.com/uc?export=view&id=12TaR4NB8qdcEq_HbA614bjiY8qIeeWBY"
+                class="card-img-top img-fit"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Forum / Blog Website</h5>
+                <p class="card-text">
+                  Forum and general blog website created using React, Node.js,
+                  MongoDB and other libraries and frameworks. Containg user
+                  logins, passwords, and ID's to assist with user posting.
+                </p>
+              </div>
+              <div class="card-footer my-2">
+                <a href="#" class="btn btn-primary"
+                  >GitHub <i class="icon fa-brands fa-github fa-2xl"></i
+                ></a>
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#forumModalLong"
+                >
+                  Read more
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="forumModalLong"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="forumModalLongTitle"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">
+                          MoBlog - Forum / Blog
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        Using what I have learned from University, along with
+                        what I have practiced in my free time, I decided to
+                        create a forum / blog website. Using React, Node.js,
+                        MongoDB and other libraries and frameworks, I aimed to
+                        create a forum that can host discussion. Working on
+                        deploying right now!
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Search Engine -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card h-100 mx-1"
+              style="background-color: black; color: white"
+            >
+              <img
+                src="https://drive.google.com/uc?export=view&id=1J7zVUv1iAt3AVtrn_IcJObodgv7WNYK4"
+                class="card-img-top img-fit"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Search Engine</h5>
+                <p class="card-text">
+                  Java created search engine, utilizing an inverted index,
+                  Jetty, and dynamically generated HTML.
+                </p>
+              </div>
+              <div class="card-footer my-2">
+                <a href="#" class="btn btn-primary"
+                  >GitHub <i class="icon fa-brands fa-github fa-2xl"></i
+                ></a>
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#searchModalLong"
+                >
+                  Read more
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="searchModalLong"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="searchModalLongTitle"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">
+                          Search Engine
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        This search engine project uses a web crawler, and Jetty
+                        to provide a web server and servlet container. This
+                        project contains a webpage with a text box where users
+                        may enter a multi-word search query that submits to a
+                        servlet in my search engine. It then matches the data
+                        that is stored in the inverted index and returns the
+                        search results of those queries as dynamically generated
+                        HTML with sorted and clickable links.
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Money Manager -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card h-100 mx-1"
+              style="background-color: black; color: white"
+            >
+              <img
+                src="https://drive.google.com/uc?export=view&id=1UzOXcy-cBQ-Shks8ziZvZtvXJrrdgEoJ"
+                class="card-img-top img-fit"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Mo Money Manager</h5>
+                <p class="card-text">
+                  Using C# and the Microsoft .NET Framework, this Windows Form
+                  App is a basic little mini money manager. Allowing users to
+                  subtract, add and keep a record of purchases, sales, and
+                  transactions.
+                </p>
+              </div>
+              <div class="card-footer my-2">
+                <a href="#" class="btn btn-primary"
+                  >GitHub <i class="icon fa-brands fa-github fa-2xl"></i
+                ></a>
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#moneyModalLong"
+                >
+                  Read more
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="moneyModalLong"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="moneyModalLongTitle"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">
+                          Mo Money Manager
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        Using C# and the Microsoft .NET Framework, this Windows
+                        Form App is a basic little mini money manager. Growing
+                        into adulthood forced myself to juggle all sorts of
+                        purchases and financial responsibilty. Forgetting to
+                        manage one's money can quickly disrupt a budget. This
+                        WinFormApp helps manage any money received, as well as
+                        what you spend it on while keeping track of a history,
+                        for improving one's financial organization.
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  Bash Shell -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card h-100 mx-1"
+              style="background-color: black; color: white"
+            >
+              <img
+                src="https://drive.google.com/uc?export=view&id=18i8YQxMqhnQIyr9swjJa435qr7MLx79S"
+                class="card-img-top img-fit"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bash Shell</h5>
+                <p class="card-text">
+                  this project is a shell, created in C, that is function as
+                  usual with commands, scripting, history list/navigation, IO
+                  redirection, signal handling and more.
+                </p>
+              </div>
+              <div class="card-footer my-2">
+                <a href="#" class="btn btn-primary"
+                  >GitHub <i class="icon fa-brands fa-github fa-2xl"></i
+                ></a>
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#bashModalLong"
+                >
+                  Read more
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="bashModalLong"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="bashModalLongTitle"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">
+                          Bash Shell
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        Using C and Shell, this project is a shell that is able
+                        to take commands and still execute them. This shell is
+                        able to function like a normal one with commands,
+                        scripting, history list/navigation, IO redirection,
+                        signal handling and more. It reads every command as a
+                        half-virtualization method, so that we may look at the
+                        command and interpret what we would like to do with it.
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fatal Tide  -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card h-100 mx-1"
+              style="background-color: black; color: white"
+            >
+              <img
+                src="https://drive.google.com/uc?export=view&id=1SWg2Wc1SwBX5rmSY9kZgzANQtfD5tSLk"
+                class="card-img-top img-fit"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fatal Tide</h5>
+                <p class="card-text">
+                  Video Game featuring enemy combat, multiple levels, cutscenes
+                  and dialogue with working sound and original music. Created in
+                  Construct 3.
+                </p>
+              </div>
+              <div class="card-footer my-2">
+                <a href="#" class="btn btn-primary"
+                  >GitHub <i class="icon fa-brands fa-github fa-2xl"></i
+                ></a>
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#fatalModalLong"
+                >
+                  Read more
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="fatalModalLong"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="fatalModalLongTitle"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">
+                          Fatal Tide
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        Through my employement at Girls Make Games, I was able
+                        to attain a valuable skill set & understanding of
+                        Construct 3, a 2D game engine to provide instruction to
+                        a remote class of students. Here we created a 2D game
+                        called Fatal Tide, which featured enemy combat, multiple
+                        levels, cutscenes and dialogue with working sound and
+                        original music.
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- This site -->
+          <div class="col-sm-12 col-md-4 col-lg-3">
+            <div
+              class="card h-100 mx-1"
+              style="background-color: black; color: white"
+            >
+              <img
+                src="https://drive.google.com/uc?export=view&id=17ORJzo8uLiil82f2-H_10V2XDQJqzWIL"
+                class="card-img-top img-fit"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Portfolio</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Facere aperiam eligendi, sit qui fugiat nisi! Optio labore
+                  enim rerum minus id quam sint perferendis, doloribus
+                  reiciendis expedita minima saepe illum!
+                </p>
+              </div>
+              <div class="card-footer my-2">
+                <a href="#" class="btn btn-primary"
+                  >GitHub <i class="icon fa-brands fa-github fa-2xl"></i
+                ></a>
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#fatalModalLong"
+                >
+                  Read more
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="fatalModalLong"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="fatalModalLongTitle"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">
+                          Fatal Tide
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        Through my employement at Girls Make Games, I was able
+                        to attain a valuable skill set & understanding of
+                        Construct 3, a 2D game engine to provide instruction to
+                        a remote class of students. Here we created a 2D game
+                        called Fatal Tide, which featured enemy combat, multiple
+                        levels, cutscenes and dialogue with working sound and
+                        original music.
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="content">
+        <div class="my_card">
+          <img
+            src="https://drive.google.com/uc?export=view&id=1zNomPTUIzWK5bSJl4DjsY3dKvgXguphg"
+            alt="project picture"
+          />
+          <p class="title">Senior Master Class</p>
+          <p class="text">
+            My team and I built a web application that allows professors to
+            connect students with industry project sponsors and their ideas. We
+            centralized a location for sponsor pitch ideas, and project team
+            forming. This includes account creation, project uploading, student
+            organization and communication
+            <br />
+            <i
+              class="icon fa-brands fa-github fa-2xl"
+              data-toggle="modal"
+              data-target="#exampleModalCenter"
+            ></i>
+          </p>
+
+          <div
+            class="modal fade"
+            id="exampleModalCenter"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">
+                    GitHub Links:
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <a
+                    href="https://github.com/sfdevshop/master-class-web"
+                    target="_blank"
+                  >
+                    <button type="button" class="btn btn-info">
+                      Master Class Front End Link
+                    </button>
+                  </a>
+                  <a
+                    href="https://github.com/sfdevshop/master-class-api"
+                    target="_blank"
+                  >
+                    <button type="button" class="btn btn-info">
+                      Master Class API Link
+                    </button>
+                  </a>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="my_card">
+          <img
+            src="https://drive.google.com/uc?export=view&id=1zNomPTUIzWK5bSJl4DjsY3dKvgXguphg"
+            alt="project picture"
+          />
+          <p class="title">MopBox</p>
+          <p class="text">
+            Website I created to host my side hustle, MopBox, a computer
+            building business. As one of my favorite hobbies, building PC's has
+            always interested me. To expand my business and to get more
+            customers, I created a website that allows users to view customer
+            reviews as well place orders directly to my email.
+            <br />
+            <i
+              class="icon fa-brands fa-github fa-2xl"
+              data-toggle="modal"
+              data-target="#MopBoxModalCenter"
+            ></i>
+          </p>
+
+          <div
+            class="modal fade"
+            id="MopBoxModalCenter"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Links:</h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <a href="http://www.mopbox.pro/" target="_blank">
+                    <button type="button" class="btn btn-info">
+                      Website Link
+                    </button>
+                  </a>
+                  <a
+                    href="https://github.com/mopeters8/MopBoxNew"
+                    target="_blank"
+                  >
+                    <button type="button" class="btn btn-info">GitHub</button>
+                  </a>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="my_card">
+          <img
+            src="https://drive.google.com/uc?export=view&id=12TaR4NB8qdcEq_HbA614bjiY8qIeeWBY"
+            alt="project picture"
+          />
+          <p class="title">Forum / Blog Website</p>
+          <p class="text">
+            Using what I have learned from University, along with what I have
+            practiced in my free time, I decided to create a forum / blog
+            website. Using React, Node.js, MongoDB and other libraries and
+            frameworks, I aimed to create a forum that can host discussion.
+            Working on deploying right now!
+            <br />
+            <a class="link" to="https://github.com/mopeters8/owen-blog">
+              <i class="icon fa-brands fa-github fa-2xl"></i>
+            </a>
+          </p>
+        </div>
+
+        <div class="my_card">
+          <img
+            src="https://drive.google.com/uc?export=view&id=1J7zVUv1iAt3AVtrn_IcJObodgv7WNYK4"
+            alt="project picture"
+          />
+          <p class="title">Search Engine</p>
+          <p class="text">
+            This search engine project uses a web crawler, and Jetty to provide
+            a web server and servlet container. This project contains a webpage
+            with a text box where users may enter a multi-word search query that
+            submits to a servlet in my search engine. It then matches the data
+            that is stored in the inverted index and returns the search results
+            of those queries as dynamically generated HTML with sorted and
+            clickable links.
+            <br />
+            <a
+              class="link"
+              href="https://github.com/usf-cs212-spring2021/project-mopeters8"
+            >
+              <i class="icon fa-brands fa-github fa-2xl"></i>
+            </a>
+          </p>
+        </div>
+
+        <div class="my_card">
+          <img
+            src="https://drive.google.com/uc?export=view&id=1UzOXcy-cBQ-Shks8ziZvZtvXJrrdgEoJ"
+            alt="project picture"
+          />
+          <p class="title">Mo Money Manager</p>
+          <p class="text">
+            Using C# and the Microsoft .NET Framework, this Windows Form App is
+            a basic little mini money manager. Growing into adulthood forced
+            myself to juggle all sorts of purchases and financial responsibilty.
+            Forgetting to manage one's money can quickly disrupt a budget. This
+            WinFormApp helps manage any money received, as well as what you
+            spend it on while keeping track of a history, for improving one's
+            financial organization.
+            <br />
+            <a class="link" href="https://github.com/mopeters8/MoMoneyCsharp">
+              <i class="icon fa-brands fa-github fa-2xl"></i>
+            </a>
+          </p>
+        </div>
+
+        <div class="full_card">
+          <img
+            src="https://drive.google.com/uc?export=view&id=1SWg2Wc1SwBX5rmSY9kZgzANQtfD5tSLk"
+            alt="project picture"
+          />
+          <p class="title">Fatal Tide</p>
+          <p class="text">
+            Through my employement at Girls Make Games, I was able to attain a
+            valuable skill set & understanding of Construct 3, a 2D game engine
+            to provide instruction to a remote class of students. Here we
+            created a 2D game called Fatal Tide, which featured enemy combat,
+            multiple levels, cutscenes and dialogue with working sound and
+            original music.
+            <br />
+            <a
+              class="link"
+              href="https://drive.google.com/file/d/1KcYc-KBGc_-sQj7dZHNMll50U2Bo-4lC/view?usp=sharing"
+            >
+              <i class="icon fa-brands fa-github fa-2xl"></i>
+            </a>
+          </p>
+        </div>
+
+        <div class="full_card">
+          <img
+            src="https://drive.google.com/uc?export=view&id=18i8YQxMqhnQIyr9swjJa435qr7MLx79S"
+            alt="project picture"
+          />
+          <p class="title">Bash Shell</p>
+          <p class="text">
+            Using C and Shell, this project is a shell that is able to take
+            commands and still execute them. This shell is able to function like
+            a normal one with commands, scripting, history list/navigation, IO
+            redirection, signal handling and more. It reads every command as a
+            half-virtualization method, so that we may look at the command and
+            interpret what we would like to do with it.
+            <br />
+            <a
+              class="link"
+              href="https://github.com/usf-cs326-fa22/P2-mopeters8"
+            >
+              <i class="icon fa-brands fa-github fa-2xl"></i>
+            </a>
+          </p>
+        </div>
+      </div> -->
+    </div>
+  </body>
+</html>
