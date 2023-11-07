@@ -38,19 +38,112 @@
     <!-- NAVBAR -->
     <nav
       id="navbar-example2"
-      class="navbar-expand-md navbar-light bg-dark d-flex justify-content-center px-3 py-2"
+      class="navbar navbar-dark navbar-expand-sm bg-dark px-3 py-2"
     >
-      <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#introArea">Introduction</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#biographyArea">Biography </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#projectsArea">Projects</a>
-        </li>
-      </ul>
+      <div class="container">
+        <button
+          class="navbar-toggler ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#n_bar"
+          aria-controls="navbarNavAltMarkup"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"> </span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="n_bar">
+          <ul class="nav justify-content-center nav-pills">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#introArea">Introduction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#biographyArea">Bio </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#projectsArea">Projects</a>
+            </li>
+            <li class="nav-item cv">
+              <a
+                class="nav-link text-white"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+                >Request CV</a
+              >
+            </li>
+
+            <div
+              class="modal fade"
+              id="staticBackdrop"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content bg-dark text-light text-center">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                      Request CV or Contact
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <form
+                      action="https://formsubmit.co/2b7571e8c1d6fe6c45ef8dad5d33899e"
+                      method="POST"
+                      class="text-light"
+                    >
+                      <div class="row">
+                        <div
+                          class="col mx-5 flex-column d-flex justify-content-center"
+                        >
+                          <input
+                            type="hidden"
+                            name="_subject"
+                            value="Resume request!"
+                          />
+                          <input
+                            type="hidden"
+                            name="_next"
+                            value="http://127.0.0.1:5500/"
+                          />
+                          <span>Name:</span>
+                          <input type="text" name="name" required />
+                          <br />
+                          <span>Email:</span>
+                          <input type="email" name="email" required />
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div
+                          class="col m-4 flex-row d-flex justify-content-evenly"
+                        >
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                          <button type="submit" class="btn btn-outline-warning">
+                            Submit
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <!-- BODY OF PAGE -->
@@ -85,13 +178,19 @@
           </div>
           <div class="rightSocials">
             <div class="icon">
-              <i class="fa-brands fa-instagram fa-2xl"></i>
+              <a href="https://www.instagram.com/m8peters/" target="_blank">
+                <i class="fa-brands fa-instagram fa-2xl"></i>
+              </a>
             </div>
             <div class="icon">
-              <i class="fa-brands fa-linkedin-in fa-2xl"></i>
+              <a href="https://www.linkedin.com/in/mpeters48/" target="_blank">
+                <i class="fa-brands fa-linkedin-in fa-2xl"></i>
+              </a>
             </div>
             <div class="icon">
-              <i class="fa-brands fa-github fa-2xl"></i>
+              <a href="https://github.com/mopeters8" target="_blank">
+                <i class="fa-brands fa-github fa-2xl"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -147,13 +246,14 @@
                   <p>Student Instruction</p>
                 </div>
                 <div class="col-sm item">
-                  <i class="fa-solid fa-people-carry-box fa-2xl"></i>
-                  <p>Teamwork & Collaboration</p>
+                  <i class="fa-solid fa-wrench fa-2xl"></i>
+                  <p>Computer Technician</p>
+                </div>
+                <div class="col-sm item">
+                  <i class="fa-solid fa-computer fa-2xl"></i>
+                  <p>Information Technology</p>
                 </div>
               </div>
-              <!-- <div class="row text-center text-secondary">
-                <p>Click for more info!</p>
-              </div> -->
             </div>
           </div>
           <div class="col-sm">
@@ -167,21 +267,20 @@
                 class="row pt-3 d-flex flex-row text-center justify-content-center"
               >
                 <div class="col-sm item">
-                  <i class="fa-solid fa-graduation-cap fa-2xl"></i>
+                  <i class="fa-solid fa-school fa-2xl"></i>
+
                   <p>Computer Science Degree</p>
                 </div>
                 <div class="col-sm item">
-                  <i class="fa-solid fa-school fa-2xl"></i>
-                  <p>Dean's List</p>
+                  <i class="fa-solid fa-graduation-cap fa-2xl"></i>
+
+                  <p>University of San Francisco Graduate</p>
                 </div>
                 <div class="col-sm item">
-                  <i class="fa-solid fa-hand-holding-dollar fa-2xl"></i>
-                  <p>St.Baldricks Charity Stream</p>
+                  <i class="fa-solid fa-certificate fa-2xl"></i>
+                  <p>Google IT Pro Certificate</p>
                 </div>
               </div>
-              <!-- <div class="row text-center text-secondary">
-                <p>Click for more info!</p>
-              </div> -->
             </div>
           </div>
         </div>
@@ -218,14 +317,7 @@
         </div>
       </div>
 
-      <!-- <div class="arrows fadeIn-animation">
-        <span class="material-symbols-outlined"> arrow_downward </span>
-        <span class="material-symbols-outlined"> arrow_downward </span>
-        <span class="material-symbols-outlined"> arrow_downward </span>
-      </div> -->
-
       <!-- BOOTSTRAP CARD WORKS -->
-
       <div class="container-fluid py-3 projects" id="projectsArea">
         <div class="mb-4 d-flex flex-column align-items-center">
           <div class="row justify-content-center">

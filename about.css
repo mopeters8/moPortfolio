@@ -553,7 +553,7 @@ br {
   color: black;
 }
 
-nav {
+.navbar {
   position: fixed;
   width: 100%;
   z-index: 100;
@@ -587,7 +587,20 @@ nav {
   background: none;
 }
 
+.modal-backdrop {
+  z-index: auto;
+}
+
 @media only screen and (max-width: 650px) {
+  html {
+    scroll-padding-top: 100px;
+  }
+
+  /* NAVBAR */
+  .nav-pills {
+    font-size: 12px;
+  }
+
   /* INTRODUCTION */
   .bioIntro {
     top: 100px;
