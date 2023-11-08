@@ -8,7 +8,6 @@
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -111,7 +110,7 @@
                           <input
                             type="hidden"
                             name="_next"
-                            value="http://127.0.0.1:5500/"
+                            value="https://mopeters8.github.io/moPortfolio/"
                           />
                           <span>Name:</span>
                           <input type="text" name="name" required />
@@ -291,25 +290,37 @@
               class="pt-4 pb-5 d-flex flex-column align-items-center rounded techstack"
             >
               <div class="row">
-                <h2 class="underline">Tech Stack</h2>
+                <h2 class="underline" id="techtitle">Tech Stack</h2>
               </div>
               <div
                 class="row pt-3 gx-5 gy-5 d-flex flex-row text-center justify-content-center"
               >
                 <div class="col-sm item">
-                  <i class="fa-brands fa-java fa-2xl"></i>
+                  <i class="fa-brands fa-java fa-2xl" id="javaTSItem"></i>
                 </div>
                 <div class="col-sm item">
-                  <i class="fa-brands fa-js fa-2xl"></i>
+                  <i
+                    class="fa-brands fa-js fa-2xl techstackItem"
+                    id="javaScriptTSItem"
+                  ></i>
                 </div>
                 <div class="col-sm item">
-                  <i class="fa-brands fa-html5 fa-2xl"></i>
+                  <i
+                    class="fa-brands fa-html5 fa-2xl techstackItem"
+                    id="htmlTSItem"
+                  ></i>
                 </div>
                 <div class="col-sm item">
-                  <i class="fa-brands fa-css3-alt fa-2xl"></i>
+                  <i
+                    class="fa-brands fa-css3-alt fa-2xl techstackItem"
+                    id="cssTSItem"
+                  ></i>
                 </div>
                 <div class="col-sm item">
-                  <i class="fa-solid fa-c fa-2xl"></i>
+                  <i
+                    class="fa-solid fa-c fa-2xl techstackItem"
+                    id="cTSItem"
+                  ></i>
                 </div>
               </div>
             </div>
@@ -326,6 +337,81 @@
         </div>
 
         <div class="row gy-4 text-center justify-content-center">
+          <!-- This site -->
+          <div class="col-sm-12 col-md-4 col-lg-3">
+            <div
+              class="card h-100 mx-1"
+              style="background-color: black; color: white"
+            >
+              <img
+                src="https://drive.google.com/uc?export=view&id=17ORJzo8uLiil82f2-H_10V2XDQJqzWIL"
+                class="card-img-top img-fit"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">My Portfolio</h5>
+                <p class="card-text">
+                  My portfolio site, created simply with HTML, CSS and
+                  JavaScript. I aimed for this to be a quick summary of me, and
+                  the projects I have worked on.
+                </p>
+              </div>
+              <div class="card-footer my-2">
+                <a
+                  href="https://github.com/mopeters8/moPortfolio"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >GitHub <i class="icon fa-brands fa-github fa-2xl"></i
+                ></a>
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#portfolioModalLong"
+                >
+                  Read more
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="portfolioModalLong"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="portfolioModalLongTitle"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">
+                          My portfolio website!
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        I wanted to create a website that showed off who I am,
+                        what I have created and to showcase my ability to create
+                        web page. As seen, I wanted it to be fluid, responsive
+                        and easy on the eye. I plan to continue to upgrade this
+                        portfolio, as I continue to learn more. Any and all
+                        feedback is appreciated!
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <!-- Senior Master Class -->
           <div class="col-sm-6 col-md-4 col-lg-3">
             <div
@@ -346,7 +432,10 @@
                 </p>
               </div>
               <div class="card-footer my-2">
-                <a href="#" class="btn btn-primary"
+                <a
+                  href="https://github.com/sfdevshop/master-class-web"
+                  target="_blank"
+                  class="btn btn-primary"
                   >GitHub <i class="icon fa-brands fa-github fa-2xl"></i
                 ></a>
                 <!-- Button trigger modal -->
@@ -417,7 +506,10 @@
                 </p>
               </div>
               <div class="card-footer my-2">
-                <a href="#" class="btn btn-primary"
+                <a
+                  href="https://github.com/mopeters8/MopBoxNew"
+                  target="_blank"
+                  class="btn btn-primary"
                   >GitHub <i class="icon fa-brands fa-github fa-2xl"></i
                 ></a>
                 <!-- Button trigger modal -->
@@ -453,6 +545,15 @@
                         expand my business and to get more customers, I created
                         a website that allows users to view customer reviews as
                         well place orders directly to my email.
+                        <br />
+                        This site is live and being hosted via GitHub pages, and
+                        my own domain!
+                        <a
+                          href="https://www.mopbox.pro"
+                          target="_blank"
+                          style="color: green"
+                          >Link to MopBox.pro</a
+                        >
                       </div>
                       <div class="modal-footer">
                         <button
@@ -484,12 +585,15 @@
                 <h5 class="card-title">Forum / Blog Website</h5>
                 <p class="card-text">
                   Forum and general blog website created using React, Node.js,
-                  MongoDB and other libraries and frameworks. Containg user
+                  MongoDB and other libraries and frameworks. Containing user
                   logins, passwords, and ID's to assist with user posting.
                 </p>
               </div>
               <div class="card-footer my-2">
-                <a href="#" class="btn btn-primary"
+                <a
+                  href="https://github.com/mopeters8/owen-blog"
+                  target="_blank"
+                  class="btn btn-primary"
                   >GitHub <i class="icon fa-brands fa-github fa-2xl"></i
                 ></a>
                 <!-- Button trigger modal -->
@@ -560,7 +664,10 @@
                 </p>
               </div>
               <div class="card-footer my-2">
-                <a href="#" class="btn btn-primary"
+                <a
+                  href="https://github.com/usf-cs212-spring2021/project-mopeters8"
+                  target="_blank"
+                  class="btn btn-primary"
                   >GitHub <i class="icon fa-brands fa-github fa-2xl"></i
                 ></a>
                 <!-- Button trigger modal -->
@@ -635,7 +742,10 @@
                 </p>
               </div>
               <div class="card-footer my-2">
-                <a href="#" class="btn btn-primary"
+                <a
+                  href="https://github.com/mopeters8/MoMoneyCsharp"
+                  target="_blank"
+                  class="btn btn-primary"
                   >GitHub <i class="icon fa-brands fa-github fa-2xl"></i
                 ></a>
                 <!-- Button trigger modal -->
@@ -703,13 +813,16 @@
               <div class="card-body">
                 <h5 class="card-title">Bash Shell</h5>
                 <p class="card-text">
-                  this project is a shell, created in C, that is function as
-                  usual with commands, scripting, history list/navigation, IO
-                  redirection, signal handling and more.
+                  A shell, created in C, that functions as usual with commands,
+                  scripting, history list/navigation, IO redirection, signal
+                  handling and more.
                 </p>
               </div>
               <div class="card-footer my-2">
-                <a href="#" class="btn btn-primary"
+                <a
+                  href="https://github.com/usf-cs326-fa22/P2-mopeters8"
+                  target="_blank"
+                  class="btn btn-primary"
                   >GitHub <i class="icon fa-brands fa-github fa-2xl"></i
                 ></a>
                 <!-- Button trigger modal -->
@@ -778,85 +891,14 @@
                 <p class="card-text">
                   Video Game featuring enemy combat, multiple levels, cutscenes
                   and dialogue with working sound and original music. Created in
-                  Construct 3.
+                  Construct3.
                 </p>
               </div>
               <div class="card-footer my-2">
-                <a href="#" class="btn btn-primary"
-                  >GitHub <i class="icon fa-brands fa-github fa-2xl"></i
-                ></a>
-                <!-- Button trigger modal -->
-                <button
-                  type="button"
-                  class="btn btn-secondary"
-                  data-bs-toggle="modal"
-                  data-bs-target="#fatalModalLong"
-                >
-                  Read more
-                </button>
-
-                <!-- Modal -->
-                <div
-                  class="modal fade"
-                  id="fatalModalLong"
-                  tabindex="-1"
-                  role="dialog"
-                  aria-labelledby="fatalModalLongTitle"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">
-                          Fatal Tide
-                        </h5>
-                      </div>
-                      <div class="modal-body">
-                        Through my employement at Girls Make Games, I was able
-                        to attain a valuable skill set & understanding of
-                        Construct 3, a 2D game engine to provide instruction to
-                        a remote class of students. Here we created a 2D game
-                        called Fatal Tide, which featured enemy combat, multiple
-                        levels, cutscenes and dialogue with working sound and
-                        original music.
-                      </div>
-                      <div class="modal-footer">
-                        <button
-                          type="button"
-                          class="btn btn-secondary"
-                          data-bs-dismiss="modal"
-                        >
-                          Close
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- This site -->
-          <div class="col-sm-12 col-md-4 col-lg-3">
-            <div
-              class="card h-100 mx-1"
-              style="background-color: black; color: white"
-            >
-              <img
-                src="https://drive.google.com/uc?export=view&id=17ORJzo8uLiil82f2-H_10V2XDQJqzWIL"
-                class="card-img-top img-fit"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Portfolio</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Facere aperiam eligendi, sit qui fugiat nisi! Optio labore
-                  enim rerum minus id quam sint perferendis, doloribus
-                  reiciendis expedita minima saepe illum!
-                </p>
-              </div>
-              <div class="card-footer my-2">
-                <a href="#" class="btn btn-primary"
+                <a
+                  href="https://drive.google.com/file/d/1KcYc-KBGc_-sQj7dZHNMll50U2Bo-4lC/view?usp=sharing"
+                  target="_blank"
+                  class="btn btn-primary"
                   >GitHub <i class="icon fa-brands fa-github fa-2xl"></i
                 ></a>
                 <!-- Button trigger modal -->
@@ -1167,5 +1209,6 @@
         </div>
       </div> -->
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
